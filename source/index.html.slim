@@ -1,5 +1,5 @@
 ---
-title: Kaldi - Middleman + Netlify CMS Example
+title: Castrum Doloris 
 ---
 
 section.hero style=background_image(image_path(data.pages.home.hero.image))
@@ -31,5 +31,5 @@ section.homepage-news.news
       | News
     .news-items
       //get the first two most recent posts
-      - blog.articles.first(2).each do | article |
+      - blog.articles.first(1).each do | article |
         = partial 'partials/news/news_item', locals: {article: article}
